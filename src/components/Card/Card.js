@@ -12,8 +12,8 @@ export default function Card(props) {
             <h1>{props.title}</h1>
             <p>{props.description}</p>
             <div className={styles.card_prices}>
-                <h2>{props.soldedPrice}</h2>
-                <h3>{props.notSoldedPrice}</h3>
+                <h3>{props.soldedPrice}</h3>
+                <h4>{props.notSoldedPrice}</h4>
             </div>
             <div className={styles.btn_buy}>
                 <img src={cartIcon} alt="icon cart" />
