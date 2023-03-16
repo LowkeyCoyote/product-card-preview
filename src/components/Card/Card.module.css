@@ -1,0 +1,126 @@
+.card_container{
+    width: 37.5rem;
+    height: 28rem;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.card_image{
+    width: 50%;
+    height: 28rem;
+    background-image:url(../../assets/images/image-product-desktop.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card_content{
+    width: 50%;
+    padding: 1.6rem;
+}
+
+.card_content > h2{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin-bottom: 1.1rem;
+}
+
+.card_content > h1{
+    font-family: 'fraunces', sans-serif;
+    line-height: 1;
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.card_content > p{
+    color: var(--dark-grayish-blue);
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.card_prices{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.card_prices > h3{
+    font-size: 2.1rem;
+    color: var(--dark-cyan);
+    font-family: 'fraunces';
+    margin-right: 1rem;
+}
+
+.card_prices > h4{
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.btn_buy{
+    background-color: var(--dark-cyan);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.btn_buy:hover{
+    transition: ease-in-out 0.2s all;
+    background-color: hsl(157, 37%, 22%);
+}
+
+.btn_buy > p {
+    color: white;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .card_container{
+        height: 38rem;
+        width: 21.5rem;
+        flex-direction: column;
+    }
+
+    .card_image{
+        width: 21.5rem;
+        height: 16rem;
+        background-size: cover;
+        background-position: bottom -8.5rem center
+    }
+
+    .card_content{
+        width: 21.5rem;
+        padding: 1.3rem;
+    }
+
+    .card_content > p {
+        margin-bottom: 1.2rem;
+    }
+
+    .card_content > h2{
+        margin-bottom: 0.5rem;
+    }
+    .card_content > h1{
+        margin-bottom: 0.7rem;
+        font-size: 2rem;
+    }
+
+    .card_prices{
+        margin-bottom: 1.0rem;
+    }
+}
+
+
